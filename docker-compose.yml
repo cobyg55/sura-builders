@@ -1,0 +1,14 @@
+version: '3'
+services:
+  postgres:
+    image: postgres
+    container_name: PostgresSuraBuilders
+    volumes:
+      - ./docker/scripts:/docker-entrypoint-initdb.d
+    environment:
+      POSTGRES_MULTIPLE_DATABASES: sura, "sura-builders"
+      POSTGRES_USER: 'sura'
+      POSTGRES_PASSWORD: 'secret'
+    tty: false
+    ports:
+      - "5432:5432"
