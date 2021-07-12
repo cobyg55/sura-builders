@@ -1,0 +1,9 @@
+rootProject.name = 'sura-builders'
+include 'sura-builders-core'
+include 'sura-builders-api'
+include 'sura-builders-app'
+include 'sura-builders-domain'
+include 'sura-builders-common'
+include 'sura-builders-schema'
+include 'sura-builders-client'
+

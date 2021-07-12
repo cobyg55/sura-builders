@@ -1,0 +1,7 @@
+dependencies {
+    implementation project(':sura-builders-domain')
+    implementation project(':sura-builders-common')
+    implementation project(':sura-builders-client')
+    implementation 'org.springframework:spring-context'
+    implementation 'javax.servlet:javax.servlet-api:4.0.1'
+}

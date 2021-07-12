@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="ConsoleOut" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>
+                %d{HH:mm:ss.SSS} [%t] %-5level %X{CID} %logger{36} - %msg%n
+            </Pattern>
+        </layout>
+    </appender>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>
+                %d{HH:mm:ss.SSS} [%t] %-5level %X{CID} %logger{36} - %msg%n
+            </Pattern>
+        </layout>
+    </appender>
+    <root level="info">
+        <appender-ref ref="ConsoleOut"/>
+    </root>
+    <logger name="com.sura.builders" level="trace" additivity="false">
+        <appender-ref ref="ConsoleOut"/>
+    </logger>
+</configuration>

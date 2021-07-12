@@ -1,0 +1,8 @@
+dependencies {
+    implementation project(':sura-builders-common')
+    implementation project(':sura-builders-core')
+    implementation project(':sura-builders-domain')
+    implementation project(':sura-builders-schema')
+    implementation project(':sura-builders-api')
+    implementation 'org.springframework.boot:spring-boot-starter-jetty'
+}

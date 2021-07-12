@@ -1,0 +1,4 @@
+dependencies {
+    implementation project(':sura-builders-common')
+    implementation project(':sura-builders-domain')
+}
